@@ -6,17 +6,18 @@
 }
 
 :root{
-	--primary-color:  #fff;
-	--secondary-color: #000;
-	--link-color:#CC0000 ;
+	--primary-color: #28282B;
+	--secondary-color: #fff;
+	--link-color:#fff ;
+	
 	--main-padding:2rem 10rem ;
 	--secondary-padding: 5rem 0;
 	
 	}
 .black-theme{
-	--primary-color: #28282B;
-	--secondary-color: #fff;
-	--link-color:#fff ;
+	--primary-color:  #fff;
+	--secondary-color: #000;
+	--link-color:#CC0000 ;
 }
 /*------------------mainLogo----------------*/
 .logo{
@@ -327,7 +328,7 @@ section{
 }
 .buiness-side{
 	width: 30%;
-	min-height: 70vh;
+	min-height: 90vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 	margin-left:20px;
 }
@@ -343,10 +344,14 @@ section{
 .side-bar-content{
 	display: flex;
 	border-bottom: 1px solid var(--secondary-color);
+
+}
+.last{
+	border-bottom: none;
 }
 .side-img{
-	min-height: 100px;
-	width: 100px;
+	height: 75px;
+	width: 300px;
 	 padding: 10px;
 }
 .side-img img{
@@ -354,11 +359,16 @@ section{
 	height: 100%;
 }
 .side-content{
-	padding: 5px 0;
+	padding: 10px 0;
+	width: 100%;
 }
 .side-content a{
 	font-weight: 400;
 	color: var(--link-color);
+}
+.time{
+	position: relative;
+	top: 50%;
 }
 /*---------------------------Sports----------------------*/
 .Sports-news{
@@ -425,7 +435,7 @@ section{
 }
 .Sports-side{
 	width: 30%;
-	min-height: 70vh;
+	min-height: 90vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 	margin-left:20px;
 }
@@ -464,8 +474,8 @@ section{
 }
 .con-img{
 	min-height: 100px;
-	width: 100px;
-	 padding: 10px;
+	width: 200px;
+	padding: 10px;
 	
 }
 .con-img img{
@@ -514,6 +524,7 @@ section{
 	border: none;
 }
 .footer-end{
+	display: flex;
 	padding-top: 10px;
 	color: #fff;
 	font-weight: 800;

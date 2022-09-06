@@ -7,7 +7,7 @@
 		font-size: 35px;
 	}
 	.addverticement{
-	margin-top: 25px;
+	
 	display: flex;
 	justify-content: center;
 	height: 250px;
@@ -83,12 +83,13 @@
 }
 
 .search-input{
-	display: none;
+	display: flex;
 }
 .search{
-	
+	position: relative;
 }
 .search input{
+	display: none;
 	font-size:15px ;
 	border: none;
 	padding:10px 10px;
@@ -99,17 +100,21 @@
 
 .search i{
 	color:var(--secondary-color);
-	position: absolute;
+	position: relative;
 	top: 25%;
-	left: 90%;
+	left: -100%;
+	margin-right: 5px;
 }
 .brightness{
 	padding: 10px 10px;
 }
 .brightness i{
+	position: relative;
+	
+	left: -100%;
 	cursor: pointer;
-	padding-left: 5px;
-	color: var(--secondary-color);
+   padding: 0;
+	margin-right: 7px;
 	
 }
 #bar-menu{
@@ -131,7 +136,7 @@
 /*------------Main------------------*/
 .today-news{
 
-	padding:0 2rem;
+	padding:0;
 }
 .today-news h1{
 	font-size: 20px;
@@ -141,6 +146,32 @@
 .news-feeds {
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
+}
+.news-overlay-ones{
+	position: absolute;
+	background-color: var(--primary-color);
+	top: 100%;
+	left: 0;
+	height: 0;
+	width: 100%;
+	opacity: 0;
+	color: color:var(--secondary-color);
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.news-overlay-ones a{
+	 color: var(--link-color);
+}
+.overlay-content-ones{
+	padding: 15px;
+}
+.newes:hover .news-overlay-ones{
+	opacity:1;
+	height: 40%;
+	top:60%;
+	transition: .5s;
 }
 .one a{
    font-size: 10px;
@@ -206,36 +237,46 @@
 .news-feeds-ones{
 display: flex;
 flex-direction: column;
-width: 90%;
+width: 95%;
+padding: 10px;
 }
-.newes{
-	position: relative;
-	
-	
-}
-
 .buiness-side{
 	width: 100%;
 	margin-left: 0;
 	margin-top: 50px;
+	min-height: 90vh;
 
+}
+.side-bar-content{
+	height: 120px;
+}
+.side-content{
+	width: 55%;
 }
 .side-content a{
 	 font-size: 20px;
 	 font-weight: 500;
-	 padding: 7px;
+	
 }
 .side-img{
+	width: 45%;
+	height: 100px;
 	
-	width: 200px;
-	
+}
+.last{
+	border-bottom: none;
 }
 .side-img img{
 	width: 100%;
 	height: 100%;
 }
 .side-content{
-	padding: 5px 0;
+	padding: 0;
+}
+.time{
+   position: relative;
+   top: 35%;
+
 }
 /*---------------------------Sports----------------------*/
 .Sports-news{
@@ -254,7 +295,8 @@ width: 90%;
 .news-feeds-Sports{
 	display: flex;
 	flex-direction: column;
-	width: 90%;
+	width: 95%;
+	padding: 10px;
 }
 .Sports-newes{
 	position: relative;
@@ -266,6 +308,7 @@ width: 90%;
 	width: 100%;
 	margin-left: 0;
 	margin-top: 50px;
+	min-height: 75vh;
 }
 
 .Sports-side-heading{
@@ -279,18 +322,51 @@ width: 90%;
 }
 
 /*------------------------container-2---------------------------*/
-.new{
-	margin-top: 60px;
-	width: 100%;
-}
+
 .container-2{
-   display: flex;
-   flex-direction: column;
-}
-.con-img{
-     
-   width: 200px;
+	display: flex;
+	flex-direction: column;
 }
 
+.cont-3{
+	display: flex;
+	flex-direction: column;
+
+}
+.con-img{
+	
+	min-width: 95%;
+	
+	
+}
+.con-img img{
+	width: 100%;
+	height: 100%;
+}
+.con-content{
+	padding: 10px 5px;
+
+}
+
+
+/*--------------------------Foooter--------------------------------*/
+.Footer{
+	height: 7vh;
+	padding: 0 1rem;
+}
+.Footer h1{
+	display: none;
+}
+.footer{
+	display: none;
+}
+.footer-end{
+	padding-top: 12px;
+	justify-content: center;
+	align-items:center ;
+}
+.footer-end h4{
+	display: none;
+}
 
 }
